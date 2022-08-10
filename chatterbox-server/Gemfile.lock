@@ -33,9 +33,13 @@ GEM
     minitest (5.14.4)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.8)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    psych (3.3.2)
+    puma (5.6.4)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-contrib (2.3.0)
       rack (~> 2.0)
@@ -83,16 +87,20 @@ GEM
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    wdm (0.1.1)
     zeitwerk (2.4.2)
 
 PLATFORMS
   universal-darwin-20
+  x64-mingw-ucrt
   x86_64-darwin-19
 
 DEPENDENCIES
   activerecord (~> 6.1)
   database_cleaner (~> 2.0)
   pry (~> 0.14.1)
+  psych (< 4)
+  puma
   rack-contrib (~> 2.3)
   rack-cors (~> 1.1)
   rack-test (~> 1.1)
@@ -105,6 +113,7 @@ DEPENDENCIES
   sinatra-activerecord (~> 2.0)
   sqlite3 (~> 1.4)
   thin (~> 1.8)
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.2.23
